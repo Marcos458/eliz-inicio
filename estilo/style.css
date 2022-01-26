@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sriracha&display=swap');
+
+
 
 :root {
     --cor0:#61580A;
@@ -7,6 +10,8 @@
     --cor3:#665F24;
     --cor4:#B3A212;
     --cor5:#004b9c;
+
+    --font1: 'Pacifico', cursive;
 }
 
 * {
@@ -25,19 +30,26 @@ header {
     width: 100vw;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
     color: var(--cor5);
+    box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.979);
     height: 200px;
     text-align: center;
     
 }
 h1 {
+    font-family:var(--font1);
     justify-content: center;
+    font-size: 3.5em;
+    line-height: 1em;
+    padding-top: 35px;
 }
+
 nav {
     margin-bottom: 20px;
     background-color: #004b9c;
     height: 50px;
     width: 100%;
-    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.432);
+    box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.432);
+    margin: auto;
 }
 ul, li {
     display: flex;
@@ -48,20 +60,21 @@ ul, li {
 }
 a {
     color: white;
-    margin:8px;
+    margin-top: 12px;
     text-decoration: none;
     font-size: 1.2em;
+    padding-left: 15px;
 }
 section {
     background-color: var(--cor2);
     margin: auto;
+    margin-top: 25px;
     width: 670px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.432);
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
     padding:10px 0px;
-    justify-self: auto;
-    width: 65vw;
+    width: 80vw;
 }
 div {
     background-color: var(--cor3);
@@ -72,7 +85,7 @@ div {
     margin-block-start: 20px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    width: 53vw;
+    width: 70vw;
     padding: 0px;
 }
 footer {
